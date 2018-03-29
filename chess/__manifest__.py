@@ -33,5 +33,5 @@
     ],
     "qweb": ['static/xml/*.xml'],
 
-    "installable": False,
+    "installable": True,
 }

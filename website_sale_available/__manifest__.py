@@ -9,8 +9,6 @@
     "support": "apps@it-projects.info",
     'website': 'https://yelizariev.github.io',
     'images': ['images/available.png'],
-    'price': 9.00,
-    'currency': 'EUR',
     'depends': [
         'website_sale',
         'stock',

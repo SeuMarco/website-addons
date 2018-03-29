@@ -7,8 +7,6 @@
     'category': 'Website',
     "support": "apps@it-projects.info",
     'website': 'https://twitter.com/yelizariev',
-    'price': 9.00,
-    'currency': 'EUR',
     'depends': ['website'],
     'images': ['images/result.png'],
     'data': [

@@ -5,14 +5,10 @@
     "category": "eCommerce",
     "images": [],
     "version": "1.0.0",
-
     "author": "IT-Projects LLC, Ivan Yelizariev",
     "support": "apps@it-projects.info",
     "website": "https://it-projects.info",
     "license": "LGPL-3",
-    # "price": 9.00,
-    # "currency": "EUR",
-
     "depends": [
         "website_sale",
     ],

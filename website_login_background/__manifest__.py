@@ -1,27 +1,26 @@
 # -*- coding: utf-8 -*-
 {
-    "name": """Hide the "Sign in" button in Website""",
-    "summary": """""",
+    "name": """Website login background""",
+    "summary": """Random background image to your taste at the website login page""",
     "category": "Website",
-    "images": [],
-    "version": "1.0.0",
+    "images": ['images/5.png'],
+    "version": "1.0.1",
 
     "author": "IT-Projects LLC",
     "support": "apps@it-projects.info",
     "website": "https://it-projects.info",
     "license": "LGPL-3",
-    # "price": 20.00,
-    # "currency": "EUR",
 
     "depends": [
+        "web_login_background",
         "website",
     ],
     "external_dependencies": {"python": [], "bin": []},
     "data": [
-        "views.xml",
+        "templates.xml",
     ],
     "demo": [
     ],
     "installable": False,
-    "auto_install": False,
+    "auto_install": True,
 }
