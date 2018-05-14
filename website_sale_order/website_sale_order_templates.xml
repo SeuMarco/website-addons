@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp><data>
+<odoo><data>
 <template id="checkout_wizard">
     <ul class="wizard pull-right">
         <li t-att-class="primary=='make_order' and 'text-primary' or 'text-muted'">Make order<span class="chevron"></span></li>
@@ -150,4 +150,4 @@
         ]]></field>
     </record>
 </data>
-</openerp>
+</odoo>

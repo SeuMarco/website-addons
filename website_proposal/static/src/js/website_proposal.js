@@ -8,7 +8,7 @@ $(document).ready(function () {
         var proposal_id = href.match(/proposal_id=([0-9]+)/);
         var line_id = href.match(/update_line\/([0-9]+)/);
         var token = href.match(/token=(.*)/);
-        openerp.jsonRpc("/website_proposal/update_line", 'call', {
+        odoo.jsonRpc("/website_proposal/update_line", 'call', {
                 'line_id': line_id[1],
                 'proposal_id': parseInt(proposal_id[1]),
                 'token': token[1],
@@ -58,7 +58,7 @@ $(document).ready(function () {
 
         sending=true;
         $('#modelaccept .status_label').show();
-        openerp.jsonRpc("/website_proposal/accept", 'call', {
+        odoo.jsonRpc("/website_proposal/accept", 'call', {
             'proposal_id': parseInt(proposal_id[1]),
             'token': token,
             'signer': signer_name,

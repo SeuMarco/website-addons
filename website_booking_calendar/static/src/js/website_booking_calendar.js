@@ -5,7 +5,7 @@
     self.SLOT_START_DELAY_MINS = 15; //minutes
     self.resources = [];
     self.bookings = [];
-    self.session = openerp.website.session || new openerp.Session();
+    self.session = odoo.website.session || new odoo.Session();
     self.domain = [];
     self.colors = {};
 
@@ -139,7 +139,7 @@
                var tr_element = $(this)
                tr_counter = tr_counter + 1;
                deferreds.push(
-                  openerp.jsonRpc('/booking/validator', 'call', {'booking': $(this).find('select').attr('name')}).then(function(result) {
+                  odoo.jsonRpc('/booking/validator', 'call', {'booking': $(this).find('select').attr('name')}).then(function(result) {
                      if(result) {
                         tr_element.css({'color': 'red'});
                         $msg.css({'visibility': 'visible'});

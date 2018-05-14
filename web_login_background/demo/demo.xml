@@ -1,4 +1,4 @@
-<openerp>
+<odoo>
     <data>
         <function model="ir.config_parameter" name="set_param" eval="('auth_signup.allow_uninvited', True)" />
         <record id="demo_web_login_background" model="ir.attachment">
@@ -8,4 +8,4 @@
             <field name="datas" type="base64" file="web_login_background/static/img/demo.jpg"/>
         </record>
     </data>
-</openerp>
+</odoo>

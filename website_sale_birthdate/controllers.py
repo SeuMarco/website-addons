@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
 
 from odoo.http import request
-import openerp.addons.website_sale.controllers.main as main
+import odoo.addons.website_sale.controllers.main as main
 
 
 class WebsiteSaleBirthdate(main.WebsiteSale):

@@ -1,5 +1,5 @@
 (function(){
-    var instance = openerp;
+    var instance = odoo;
     var QWeb = instance.qweb;
     var _t = instance._t;
     instance.website.RTE.include({

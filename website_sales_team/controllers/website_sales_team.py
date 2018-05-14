@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import werkzeug
 
 from odoo import SUPERUSER_ID
@@ -171,7 +170,7 @@ class WebsiteSale(controller):
             section_ids[id].append(line)
 
         order_ids = []
-        for section_id, lines in section_ids.items():
+        for section_id, lines in list(section_ids.items()):
             order_id = order.copy({'parent_id': order.id, 'section_id': section_id, 'order_line': [(5, 0, 0)]})
             for line in lines:
                 line.copy({'order_id': order_id.id})

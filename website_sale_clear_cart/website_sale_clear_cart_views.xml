@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
+<odoo>
     <data>
         <template id="clear_cart" inherit_id="website_sale.cart" customize_show="True" name="Clear Cart Button" priority="32" >
         <xpath expr="//a[@href='/shop/checkout']" position="before">
@@ -16,4 +16,4 @@
             </xpath>
         </template>
     </data>
-</openerp>
+</odoo>

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     "name": """Real Multi Website""",
     "summary": """Yes, you can set up multi-company, multi-website, multi-theme, multi-eCommerce on a single database!""",

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     "name": """E-commerce Category Cache""",
     "summary": """Use this module to greatly accelerate the loading of a page with a large number of product categories""",

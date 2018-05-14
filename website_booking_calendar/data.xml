@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
+<odoo>
     <data>
         <!-- Cron job for automatically remove booking that have not been paid during 15 min -->
         <record forcecreate="True" id="ir_cron_clean_booking"
@@ -16,5 +16,5 @@
             <field eval="'()'" name="args" />
         </record>
     </data>
-</openerp>
+</odoo>
 

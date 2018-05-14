@@ -1,8 +1,8 @@
 (function () {
     'use strict';
 
-    var website = openerp.website;
-    var _t = openerp._t;
+    var website = odoo.website;
+    var _t = odoo._t;
 
     website.add_template_file('/website_files/static/src/xml/website_files.editor.xml?'+Math.random());
 
@@ -212,7 +212,7 @@
             if (needle && needle.length) {
                 domain.push('|', ['datas_fname', 'ilike', needle], ['name', 'ilike', needle]);
             }
-            return openerp.jsonRpc('/web/dataset/call_kw', 'call', {
+            return odoo.jsonRpc('/web/dataset/call_kw', 'call', {
                 model: 'ir.attachment',
                 method: 'search_read',
                 args: [],
@@ -240,7 +240,7 @@
                 .value();
 
             this.$('.existing-attachments-files').replaceWith(
-                openerp.qweb.render(
+                odoo.qweb.render(
                     'website.editor.dialog.file.existing.content', {cur_records: cur_records}));
             this.parent.$('.pager')
                 .find('li.previous-file').toggleClass('disabled', (from === 0)).end()
@@ -273,7 +273,7 @@
 
             $both.css({borderWidth: "5px", borderColor: "#f00"});
 
-            return openerp.jsonRpc('/web/dataset/call_kw', 'call', {
+            return odoo.jsonRpc('/web/dataset/call_kw', 'call', {
                 model: 'ir.attachment',
                 method: 'try_remove_file',
                 args: [],
@@ -288,7 +288,7 @@
                     return;
                 }
                 $both.css({borderWidth: "", borderColor: ""});
-                $help_block.replaceWith(openerp.qweb.render(
+                $help_block.replaceWith(odoo.qweb.render(
                     'website.editor.dialog.image.existing.error', {
                         views: prevented[id]
                     }

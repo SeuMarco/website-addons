@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
+<odoo>
 <data>
   <template id="chatter">
       <h1 class="page-header hidden-print">History</h1>
@@ -463,4 +463,4 @@
   </record>
 
 </data>
-</openerp>
+</odoo>

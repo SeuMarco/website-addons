@@ -115,7 +115,7 @@ body{
 	Needed for loading and error box */
 
 /* Increase z-index value to insure that loading goes above navbar of bootstrap*/
-.openerp .oe_loading {
+.odoo .oe_loading {
   display: none;
   z-index: 1000;
   position: fixed;

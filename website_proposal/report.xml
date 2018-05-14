@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<openerp>
+<odoo>
     <data>
         <template id="report_proposal">
             <t t-set="head">
@@ -77,4 +77,4 @@
         />
 
     </data>
-</openerp>
+</odoo>

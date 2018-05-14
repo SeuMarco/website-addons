@@ -371,7 +371,7 @@ odoo.define('stock_picking_barcode.widgets', function (require) {
                 }
             });
 
-            //remove navigation bar from default openerp GUI
+            //remove navigation bar from default odoo GUI
             $('td.navbar').html('<div></div>');
         },
         on_searchbox: function(query){
@@ -552,7 +552,7 @@ odoo.define('stock_picking_barcode.widgets', function (require) {
             this.$('.oe_searchbox').keyup(function(event){
                 self.on_searchbox($(this).val());
             });
-            //remove navigation bar from default openerp GUI
+            //remove navigation bar from default odoo GUI
             $('td.navbar').html('<div></div>');
         },
         barcode_on: function(){

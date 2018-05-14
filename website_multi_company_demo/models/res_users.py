@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import re
 
 try:
@@ -6,7 +5,7 @@ try:
     from urllib import parse
 except ImportError:
     # python 2
-    import urlparse as parse
+    import urllib.parse as parse
 
 from odoo import models, SUPERUSER_ID, api
 
